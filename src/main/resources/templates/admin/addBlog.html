@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="common/admin_fragments :: header('Add Blog')"></head>
+<body>
+
+<!--导航-->
+<div th:replace="common/admin_fragments :: admin_nav(0)"></div>
+
+
+<!--中间内容-->
+<div id="workingArea" class="m-container-big m-padded-tb-big">
+    <div class="ui container">
+        <form id="blog-form" method="post" class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <div class="ui left labeled action input">
+                        <label class="ui compact teal basic label">Source</label>
+                        <!-- v-model将下拉框选择的flag绑定到bean.flag上去 -->
+                        <select class="search dropdown" v-model="bean.flag">
+                            <option value="Original">Original</option>
+                            <option value="Translation">Translation</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="text" name="title" placeholder="Blog Title" @keyup.enter="add"
+                       v-model.trim="bean.title">
+            </div>
+
+            <div class="field">
+                <div id="md-content" style="z-index: 1 !important;">
+                    <textarea placeholder="Content" @keyup.enter="add" v-model.trim="bean.content">
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="two fields">
+                <div class="field">
+                    <div class="ui left labeled action input">
+                        <label class="ui compact teal basic label">Category</label>
+                        <!-- v-model将下拉框选择的分类的id绑定到bean.category.id上去 -->
+                        <select class="search dropdown" v-model="bean.category.id">
+                            <option :value="category.id"  v-for="category in categories">{{category.name}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="ui left labeled input">
+                    <label class="ui teal basic label">Picture</label>
+                    <input type="text" @keyup.enter="add" v-model.trim="bean.picture" name="picture" placeholder="The URL of this Picture">
+                </div>
+            </div>
+
+            <div class="required field">
+                <textarea name="description" @keyup.enter="add" v-model.trim="bean.description"
+                          placeholder="Blog description..." maxlength="200"></textarea>
+            </div>
+
+            <div class="ui error message"></div>
+            <div class="ui right aligned container">
+                <button type="button" class="ui button" onclick="window.history.go(-1)">Back</button>
+                <button href="#nowhere" type="button" @click="add" class="ui teal button">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<br>
+<br>
+<!--底部footer-->
+<footer th:include="common/admin_fragments :: footer"></footer>
+
+<script>
+
+    //初始化Markdown编辑器
+    let contentEditor;
+    $(function () {
+        contentEditor = editormd("md-content", {
+            width: "100%",
+            height: 640,
+            syncScrolling: "single",
+            path: "/lib/editormd/lib/"
+        });
+    });
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+
+
+
+    let data4Vue = {
+        uri: 'blogs',
+        bean: {
+            id: 0,
+            title: '',
+            picture: '',
+            flag: '',
+            content: '',
+            description: '',
+            category: {id: 0},
+            user: {id: 1}
+        },
+        categories: []
+    }
+
+    let vue = new Vue({
+        el: '#workingArea',
+        data: data4Vue,
+        mounted: function () {
+            this.listCategories();
+        },
+        methods: {
+            add: function () {
+                // 在点击提交的时候，获取输入的Markdown内容
+                let content = $('#md-content')[0].firstChild.defaultValue;
+                if (!checkEmpty(this.bean.title, "Title"))
+                    return;
+                if (!checkEmpty(this.bean.picture, "Picture"))
+                    return;
+                if (!checkEmpty(this.bean.flag, "Flag"))
+                    return;
+                if (!checkEmpty(content, "Content"))
+                    return;
+                if (!checkEmpty(this.bean.description, "Description"))
+                    return;
+                let url = this.uri
+                let formData = new FormData;
+                formData.append("title", this.bean.title);
+                formData.append("picture", this.bean.picture);
+                formData.append("flag", this.bean.flag);
+
+                formData.append("content", content);
+                formData.append("description", this.bean.description);
+                formData.append("category_id", this.bean.category.id);
+                formData.append("user_id", this.bean.user.id);
+                axios.post(url, formData).then(function (response) {
+                    // 跳转到博客列表
+                    window.location.href = "blog";
+                });
+            },
+            listCategories: function () {
+                let url = 'categoryList';
+                axios.get(url).then(function (response) {
+                    vue.categories = response.data.data;
+                })
+            },
+
+        }
+    });
+
+</script>
+</body>
+</html>

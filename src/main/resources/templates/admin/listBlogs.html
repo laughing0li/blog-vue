@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/admin_fragments :: header('Blogs')"></head>
+<body>
+
+<!--导航-->
+<nav th:replace="common/admin_fragments :: admin_nav(1)"></nav>
+
+
+<!--中间内容-->
+<div id="workingArea" class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <!--   这里的blogList用于搜索的时候局部刷新这个表格，来显示查找到的数据   -->
+        <div id="table-container">
+            <table th:fragment="blogList" class="ui celled table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Source</th>
+                    <th>Update Time</th>
+                    <th>Edit</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="bean, index in beans">
+                    <td>{{ index + 1}}</td>
+                    <td >{{bean.title}}</td>
+                    <td >{{bean.category.name}}</td>
+                    <td >{{bean.flag}}</td>
+                    <td >{{bean.updateTime}}</td>
+                    <td>
+                        <a :href="'blog_edit?id=' + bean.id" class="ui tiny teal basic button">Edit</a>
+                        <a @click="deleteBean(bean.id)" class="ui tiny red basic button">Delete</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui pagination menu">
+                            <a :class="{ disabled: !pagination.hasPrevious }" class="item" @click="jump('pre')" >Previous</a>
+                            <a :class="{ disabled: !pagination.hasNext }" class="item" @click="jump('next')" >Next</a>
+                        </div>
+                        <a :href="'blog_add'" class="ui right floated teal basic button">Add</a>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+<br>
+<br>
+<!--底部footer-->
+<footer th:include="common/admin_fragments :: footer"></footer>
+<script>
+
+
+    let data4Vue = {
+        uri: 'blogs',
+        beans: [],
+        pagination: []
+    };
+
+    let vue = new Vue({
+        el: '#workingArea',
+        data: data4Vue,
+        mounted: function () {
+            this.list(0);
+        },
+        methods: {
+            list: function (start){
+                let url = this.uri + "?start=" + start;
+                axios.get(url).then(function (response) {
+                    // response.data是代表返回的数据，数据中有
+                    // 一个叫data的分页对象，包含了拿到的数据。其中这个data对象
+                    // 中的content就是获取到的需要显示的数据
+                    vue.beans = response.data.data.content;
+                    vue.pagination = response.data.data;
+                });
+            },
+            deleteBean: function (id) {
+                if (!checkDeleteLink())
+                    return ;
+                let url = this.uri + "/" + id;
+                axios.delete(url).then(function (response) {
+                    if (response.data.length !== 0) {
+                        alert(response.data);
+                    } else {
+                        vue.list(0);
+                    }
+                });
+            },
+            jump: function (page) {
+                jumpTo(page, vue)
+            }
+        }
+    });
+
+
+
+
+
+</script>
+
+</body>
+</html>

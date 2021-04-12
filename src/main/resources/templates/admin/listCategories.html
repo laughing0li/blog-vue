@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/admin_fragments :: header('Category')"></head>
+<body>
+
+<!--导航-->
+<nav th:replace="common/admin_fragments :: admin_nav(2)"></nav>
+
+<!--中间内容-->
+<div id="workingArea" class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <div id="table-container">
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Edit</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="category, index in beans">
+                    <td>{{index + 1}}</td>
+                    <td>{{category.name}}</td>
+                    <td>
+                        <a @click="deleteBean(category.id)" class="ui tiny red basic button">Delete</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui pagination menu">
+                            <a class="item" :class="{ disabled: !pagination.hasPrevious }"
+                               @click="jump('pre')">Previous</a>
+                            <a class="item" :class="{ disabled: !pagination.hasNext }"
+                               @click="jump('next')">Next</a>
+                        </div>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="m-container-small m-padded-tb-big">
+            <div class="ui container">
+                <form class="ui form">
+                    <div class="field">
+                        <div class="ui left labeled input">
+                            <label class="ui teal basic label">Category</label>
+                            <input v-model="bean.name" type="text" name="name" placeholder="Category Title">
+                        </div>
+                    </div>
+                    <div class="ui error message"></div>
+                    <div class="ui right aligned container">
+                        <button @click="add" class="ui teal submit button">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<br>
+<br>
+<!--底部footer-->
+<footer th:include="common/admin_fragments :: footer"></footer>
+<script>
+    $(function () {
+        let vue4Data = {
+            uri: 'categories',
+            beans: [],
+            pagination: [],
+            bean: {
+                id: 0,
+                name: ''
+            }
+        };
+
+        let vue = new Vue({
+            el: '#workingArea',
+            data: vue4Data,
+            mounted: function () {
+                this.list(0)
+            },
+            methods: {
+                list: function (start) {
+                    let url = this.uri + '?start=' + start;
+                    axios.get(url).then(function (response) {
+                        vue.beans = response.data.data.content;
+                        vue.pagination = response.data.data;
+                    })
+                },
+                add: function () {
+                    if (!checkEmpty(this.bean.name, "Name")) {
+                        return;
+                    }
+                    let url = this.uri;
+                    let formData = new FormData;
+                    formData.append("name", this.bean.name);
+                    axios.post(url, formData).then(function (response) {
+                        vue.list(0);
+                    })
+                },
+                jump: function (page) {
+                    jumpTo(page, vue)
+                },
+                deleteBean: function (id) {
+                    if (!checkDeleteLink())
+                        return;
+                    let url = this.uri + "/" + id;
+                    axios.delete(url).then(function (response) {
+                        if (response.data.length !== 0) {
+                            alert(response.data);
+                        } else {
+                            vue.list(0)
+                        }
+                    })
+                }
+            }
+        });
+    })
+
+
+</script>
+</body>
+</html>

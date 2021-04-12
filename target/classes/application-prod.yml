@@ -1,0 +1,22 @@
+logging: # 指定日志输出的级别
+  level:
+    root: warn # 指定整个项目是以warn的级别输出日志
+    com.banjo: info # 但是banjo路径下面的都是以info的级别输出日志
+  file:
+    name: log/blog-prod.log  # 日志输出的位置和名称
+spring:
+  datasource:
+    username: root
+    password: suvin123
+    url: jdbc:mysql://13.55.171.95:3306/blog?characterEncoding=UTF8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+#      ddl-auto各种值的含义
+#      create表示每次应用启动的时候，都会将之前的表全部drop掉，重新根据实体类生成一遍。
+#      create-drop在create的基础上，在应用关闭的时候还会drop一次。
+#      update可能是比较常用的，每次启动的时候会看看实体类有什么变化，然后看需不需要更改表结构。
+#      validate不会对表进行更改，但是会看看他和实体类是否对应
+#      none什么都不做
+      ddl-auto: none
+    show-sql: true

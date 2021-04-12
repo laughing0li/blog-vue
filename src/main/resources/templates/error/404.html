@@ -1,0 +1,31 @@
+<!--
+    在templates文件夹下面的error文件夹下创建404.html和500.html文件
+    这样在出现错误的时候，SpringBoot就会根据相应的错误而显示相应的404或者500页面
+ -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/fore_fragments :: header('404')">
+<body>
+<!--导航-->
+<div th:replace="common/fore_fragments :: nav(8)"></div>
+<br>
+<br>
+<br>
+
+<div class="m-container-small m-padded-tb-massive">
+    <div class="ui error message m-padded-tb-huge" >
+        <div class="ui contianer">
+            <h2>404</h2>
+            <p>Sorry，The Files Not Exists</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--底部footer-->
+<div th:include="common/admin_fragments :: footer"></div>
+</body>
+</html>

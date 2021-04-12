@@ -1,0 +1,10 @@
+spring:
+  profiles:
+  # 选择使用哪一个yml文件，这里是application-dev.yml
+    active: dev
+  # 在加载thymeleaf页面的时候不需要缓存，这样每次更改刷新页面才能看到变化
+  thymeleaf:
+    cache: false
+
+# 指定评论者的头像
+comment.avatar: /images/avatar.png

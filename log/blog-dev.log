@@ -1,0 +1,327 @@
+2021-04-12 15:01:00.365  INFO 11021 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11021 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:01:00.372 DEBUG 11021 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:01:00.373  INFO 11021 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:01:00.455  INFO 11021 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:01:00.456  INFO 11021 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:01:01.266  INFO 11021 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:01:01.342  INFO 11021 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:01:02.194  INFO 11021 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:01:02.205  INFO 11021 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:01:02.206  INFO 11021 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:01:02.277  INFO 11021 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:01:02.277  INFO 11021 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1820 ms
+2021-04-12 15:01:02.545  INFO 11021 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:01:02.618  INFO 11021 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:01:02.914  INFO 11021 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:01:03.061  INFO 11021 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:01:03.462  INFO 11021 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:01:03.496  INFO 11021 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:01:04.497  INFO 11021 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:01:04.513  INFO 11021 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:01:04.569  INFO 11021 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:01:05.295  WARN 11021 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:01:05.464  INFO 11021 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:01:05.884  INFO 11021 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:01:05.893  INFO 11021 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 6.162 seconds (JVM running for 7.209)
+2021-04-12 15:01:16.105  INFO 11021 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:01:16.106  INFO 11021 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:01:16.107  INFO 11021 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 15:12:46.043  INFO 11021 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:12:46.046  INFO 11021 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:12:46.050  INFO 11021 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-12 15:12:46.055  INFO 11021 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-12 15:12:50.620  INFO 11488 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11488 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:12:50.623 DEBUG 11488 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:12:50.623  INFO 11488 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:12:50.667  INFO 11488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:12:50.667  INFO 11488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:12:51.322  INFO 11488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:12:51.376  INFO 11488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:12:51.984  INFO 11488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:12:51.991  INFO 11488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:12:51.991  INFO 11488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:12:52.044  INFO 11488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:12:52.045  INFO 11488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1377 ms
+2021-04-12 15:12:52.196  INFO 11488 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:12:52.243  INFO 11488 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:12:52.406  INFO 11488 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:12:52.483  INFO 11488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:12:52.771  INFO 11488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:12:52.789  INFO 11488 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:12:53.453  INFO 11488 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:12:53.462  INFO 11488 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:12:53.509  INFO 11488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:12:54.054  WARN 11488 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:12:54.179  INFO 11488 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:12:54.526  INFO 11488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:12:54.536  INFO 11488 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 4.305 seconds (JVM running for 5.136)
+2021-04-12 15:13:12.770  INFO 11488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:13:12.770  INFO 11488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:13:12.771  INFO 11488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 15:16:03.251  INFO 11488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:16:03.254  INFO 11488 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:16:03.257  INFO 11488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-12 15:16:03.260  INFO 11488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-12 15:16:08.175  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11647 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:16:08.177 DEBUG 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:16:08.178  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:16:08.221  INFO 11647 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:16:08.222  INFO 11647 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:16:08.859  INFO 11647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:16:08.912  INFO 11647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:16:09.548  INFO 11647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:16:09.555  INFO 11647 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:16:09.555  INFO 11647 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:16:09.613  INFO 11647 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:16:09.613  INFO 11647 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1390 ms
+2021-04-12 15:16:09.776  INFO 11647 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:16:09.825  INFO 11647 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:16:09.983  INFO 11647 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:16:10.065  INFO 11647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:16:10.348  INFO 11647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:16:10.365  INFO 11647 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:16:11.004  INFO 11647 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:16:11.013  INFO 11647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:16:11.059  INFO 11647 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:16:11.596  WARN 11647 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:16:11.718  INFO 11647 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:16:12.040  INFO 11647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:16:12.051  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 4.283 seconds (JVM running for 5.111)
+2021-04-12 15:16:18.855  INFO 11647 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:16:18.855  INFO 11647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:16:18.857  INFO 11647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-12 15:20:12.757  INFO 11647 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:20:12.759  INFO 11647 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:20:12.763  INFO 11647 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-12 15:20:12.767  INFO 11647 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-12 15:20:13.250  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11647 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:20:13.250 DEBUG 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:20:13.251  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:20:13.423  INFO 11647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:20:13.437  INFO 11647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:20:13.581  INFO 11647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:20:13.582  INFO 11647 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:20:13.582  INFO 11647 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:20:13.591  INFO 11647 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:20:13.592  INFO 11647 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 338 ms
+2021-04-12 15:20:13.646  INFO 11647 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:20:13.651  INFO 11647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-12 15:20:13.668  INFO 11647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-12 15:20:13.668  INFO 11647 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:20:13.813  INFO 11647 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:20:13.813  INFO 11647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:20:13.837  INFO 11647 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:20:14.033  WARN 11647 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:20:14.109  INFO 11647 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:20:14.233  INFO 11647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:20:14.238  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 1.247 seconds (JVM running for 247.297)
+2021-04-12 15:20:14.240  INFO 11647 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-12 15:20:15.721  INFO 11647 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:20:15.722  INFO 11647 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:20:15.723  INFO 11647 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-12 15:20:15.729  INFO 11647 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-12 15:20:15.917  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11647 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:20:15.918 DEBUG 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:20:15.918  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:20:16.069  INFO 11647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:20:16.082  INFO 11647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:20:16.183  INFO 11647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:20:16.184  INFO 11647 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:20:16.184  INFO 11647 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:20:16.191  INFO 11647 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:20:16.191  INFO 11647 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 270 ms
+2021-04-12 15:20:16.233  INFO 11647 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:20:16.237  INFO 11647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-12 15:20:16.248  INFO 11647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-12 15:20:16.248  INFO 11647 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:20:16.372  INFO 11647 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:20:16.372  INFO 11647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:20:16.395  INFO 11647 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:20:16.555  WARN 11647 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:20:16.633  INFO 11647 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:20:16.752  INFO 11647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:20:16.756  INFO 11647 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 0.865 seconds (JVM running for 249.815)
+2021-04-12 15:20:16.757  INFO 11647 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-12 15:20:22.861  INFO 11647 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:20:22.862  INFO 11647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:20:22.863  INFO 11647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 15:22:09.037  INFO 11647 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:22:09.037  INFO 11647 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:22:09.038  INFO 11647 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-04-12 15:22:09.044  INFO 11647 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-04-12 15:22:14.266  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11893 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:22:14.269 DEBUG 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:22:14.269  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:22:14.310  INFO 11893 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:22:14.310  INFO 11893 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:22:14.853  INFO 11893 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:22:14.906  INFO 11893 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:22:15.642  INFO 11893 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:22:15.650  INFO 11893 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:22:15.651  INFO 11893 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:22:15.720  INFO 11893 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:22:15.720  INFO 11893 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2021-04-12 15:22:15.881  INFO 11893 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:22:15.931  INFO 11893 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:22:16.091  INFO 11893 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:22:16.177  INFO 11893 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:22:16.468  INFO 11893 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:22:16.485  INFO 11893 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:22:17.121  INFO 11893 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:22:17.131  INFO 11893 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:22:17.176  INFO 11893 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:22:17.725  WARN 11893 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:22:17.849  INFO 11893 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:22:18.167  INFO 11893 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:22:18.175  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 4.345 seconds (JVM running for 5.659)
+2021-04-12 15:22:22.702  INFO 11893 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:22:22.702  INFO 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:22:22.703  INFO 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 15:22:46.561  INFO 11893 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:22:46.563  INFO 11893 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:22:46.568  INFO 11893 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-12 15:22:46.573  INFO 11893 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-12 15:22:46.854  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11893 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:22:46.855 DEBUG 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:22:46.856  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:22:47.048  INFO 11893 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:22:47.068  INFO 11893 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:22:47.201  INFO 11893 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:22:47.202  INFO 11893 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:22:47.202  INFO 11893 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:22:47.209  INFO 11893 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:22:47.209  INFO 11893 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 350 ms
+2021-04-12 15:22:47.268  INFO 11893 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:22:47.272  INFO 11893 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-12 15:22:47.288  INFO 11893 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-12 15:22:47.289  INFO 11893 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:22:47.429  INFO 11893 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:22:47.430  INFO 11893 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:22:47.453  INFO 11893 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:22:47.653  WARN 11893 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:22:47.732  INFO 11893 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:22:47.857  INFO 11893 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:22:47.861  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 1.039 seconds (JVM running for 35.345)
+2021-04-12 15:22:47.864  INFO 11893 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-12 15:22:49.336  INFO 11893 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:22:49.338  INFO 11893 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:22:49.339  INFO 11893 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-12 15:22:49.345  INFO 11893 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-12 15:22:49.528  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 11893 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:22:49.528 DEBUG 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:22:49.528  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:22:49.664  INFO 11893 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:22:49.676  INFO 11893 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:22:49.777  INFO 11893 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:22:49.778  INFO 11893 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:22:49.778  INFO 11893 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:22:49.787  INFO 11893 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:22:49.787  INFO 11893 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 257 ms
+2021-04-12 15:22:49.829  INFO 11893 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:22:49.832  INFO 11893 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-12 15:22:49.843  INFO 11893 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-12 15:22:49.843  INFO 11893 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:22:49.958  INFO 11893 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:22:49.958  INFO 11893 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:22:49.979  INFO 11893 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:22:50.151  WARN 11893 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:22:50.224  INFO 11893 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:22:50.348  INFO 11893 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:22:50.352  INFO 11893 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 0.849 seconds (JVM running for 37.836)
+2021-04-12 15:22:50.354  INFO 11893 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-12 15:23:04.233  INFO 11893 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:23:04.234  INFO 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:23:04.236  INFO 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-12 15:42:34.258  INFO 11893 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:42:34.259  INFO 11893 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:42:34.260  INFO 11893 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-04-12 15:42:34.265  INFO 11893 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-04-12 15:42:40.047  INFO 12667 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 12667 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:42:40.050 DEBUG 12667 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:42:40.050  INFO 12667 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:42:40.105  INFO 12667 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:42:40.106  INFO 12667 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:42:40.943  INFO 12667 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:42:41.022  INFO 12667 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:42:41.759  INFO 12667 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:42:41.765  INFO 12667 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:42:41.766  INFO 12667 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:42:41.831  INFO 12667 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:42:41.831  INFO 12667 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1724 ms
+2021-04-12 15:42:42.027  INFO 12667 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:42:42.078  INFO 12667 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:42:42.245  INFO 12667 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:42:42.345  INFO 12667 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:42:42.635  INFO 12667 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:42:42.652  INFO 12667 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:42:43.344  INFO 12667 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:42:43.353  INFO 12667 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:42:43.399  INFO 12667 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:42:43.970  WARN 12667 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:42:44.105  INFO 12667 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:42:44.426  INFO 12667 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:42:44.435  INFO 12667 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 4.888 seconds (JVM running for 5.795)
+2021-04-12 15:43:29.099  INFO 12667 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:43:29.100  INFO 12667 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:43:29.104  INFO 12667 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-12 15:43:29.108  INFO 12667 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-12 15:43:33.388  INFO 12712 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 12712 (/Users/laughingli/Documents/Java/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/Java/blog-vue)
+2021-04-12 15:43:33.391 DEBUG 12712 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:43:33.391  INFO 12712 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:43:33.455  INFO 12712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:43:33.455  INFO 12712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:43:34.071  INFO 12712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:43:34.122  INFO 12712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:43:34.717  INFO 12712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:43:34.724  INFO 12712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:43:34.724  INFO 12712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:43:34.780  INFO 12712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:43:34.780  INFO 12712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1322 ms
+2021-04-12 15:43:34.934  INFO 12712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:43:34.973  INFO 12712 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:43:35.134  INFO 12712 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:43:35.218  INFO 12712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:43:35.505  INFO 12712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:43:35.521  INFO 12712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:43:36.132  INFO 12712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:43:36.141  INFO 12712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:43:36.190  INFO 12712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:43:36.799  WARN 12712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:43:36.932  INFO 12712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:43:37.246  INFO 12712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:43:37.255  INFO 12712 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 4.224 seconds (JVM running for 4.871)
+2021-04-12 15:44:18.469  INFO 12712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:44:18.470  INFO 12712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:44:18.471  INFO 12712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 15:50:19.225  INFO 13088 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Starting BlogVueApplication using Java 1.8.0_251 on Laughings-MacBook-Pro.local with PID 13088 (/Users/laughingli/Documents/untitled folder/blog-vue/target/classes started by laughingli in /Users/laughingli/Documents/untitled folder/blog-vue)
+2021-04-12 15:50:19.228 DEBUG 13088 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-12 15:50:19.228  INFO 13088 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : The following profiles are active: dev
+2021-04-12 15:50:19.276  INFO 13088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-12 15:50:19.276  INFO 13088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-12 15:50:20.025  INFO 13088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-12 15:50:20.089  INFO 13088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2021-04-12 15:50:20.843  INFO 13088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-12 15:50:20.852  INFO 13088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 15:50:20.852  INFO 13088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-12 15:50:20.920  INFO 13088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 15:50:20.921  INFO 13088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1644 ms
+2021-04-12 15:50:21.127  INFO 13088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-12 15:50:21.176  INFO 13088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-04-12 15:50:21.345  INFO 13088 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-12 15:50:21.445  INFO 13088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-12 15:50:21.752  INFO 13088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-12 15:50:21.775  INFO 13088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-12 15:50:22.529  INFO 13088 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-12 15:50:22.538  INFO 13088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:50:22.586  INFO 13088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-12 15:50:23.140  WARN 13088 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-12 15:50:23.267  INFO 13088 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:50:23.580  INFO 13088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-12 15:50:23.588  INFO 13088 --- [restartedMain] com.banjo.blogvue.BlogVueApplication     : Started BlogVueApplication in 4.859 seconds (JVM running for 5.71)
+2021-04-12 15:50:29.026  INFO 13088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 15:50:29.027  INFO 13088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 15:50:29.028  INFO 13088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 15:50:59.225  INFO 13088 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:50:59.226  INFO 13088 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-12 15:50:59.229  INFO 13088 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-12 15:50:59.233  INFO 13088 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
