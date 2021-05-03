@@ -147,12 +147,12 @@
         el: '#workingArea',
         data: data4Vue,
         mounted: function () {
-            this.listBlogs(0);
+            this.list(0);
             this.listCategories();
             this.blogTopList();
         },
         methods: {
-            listBlogs: function (start) {
+            list: function (start) {
                 let url = 'blogs' + "?start=" + start;
                 axios.get(url).then(function (response) {
                     vue.blogs = response.data.data.content;
