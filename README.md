@@ -1,6 +1,7 @@
 # A personal blog
 
 This is a simple blog, which I use to keep all my learning steps and other thoughts
+http://www.tinyclouds.com.au./
 
 ## Project setup:
 
